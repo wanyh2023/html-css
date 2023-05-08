@@ -46,7 +46,7 @@
 
 - 理出你的想法：用笔和纸或一些设计软件（例如Figma）
 
-  > ![components-layouts](img\components-layouts.png)
+  > ![components-layouts](img/components-layouts.png)
 
 ### 4. 设计和建立网站
 

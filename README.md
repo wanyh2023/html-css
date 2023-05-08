@@ -40,6 +40,10 @@
 
 - 计划和收集网站内容
 
+  > [Omnifood Content](Omnifood/content.md)
+  >
+  > [Omnifood Img](Omnifood/img)
+
 - 规划网站地图
 
   > 我们将只建立一个网页营销网站，因此没有网站地图

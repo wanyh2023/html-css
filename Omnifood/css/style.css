@@ -40,9 +40,27 @@ Defaults: 1
   box-sizing: border-box;
 }
 
+html {
+  /* 1rem = 10px */
+  /* 10px / 16 px = 62.5% */
+  /* 用户浏览器字体大小的百分比 */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  max-width: 100%;
 }

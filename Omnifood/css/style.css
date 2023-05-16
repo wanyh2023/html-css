@@ -298,3 +298,32 @@
   height: 3rem;
   fill: #e67e22;
 }
+
+/*******************************/
+/* TESTIMONIALS SECTION */
+/*******************************/
+
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+.testimonals {
+  gap: 4.8rem;
+}
+
+.testimonal-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonal-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonal-name {
+  font-size: 1.6rem;
+  color: #777;
+}

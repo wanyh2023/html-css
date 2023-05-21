@@ -1,12 +1,14 @@
-/*******************************/
+/**************************/
 /* HEADER */
-/*******************************/
+/**************************/
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -15,9 +17,9 @@
   height: 2.2rem;
 }
 
-/*******************************/
+/**************************/
 /* NAVIGATION */
-/*******************************/
+/**************************/
 
 .main-nav-list {
   list-style: none;
@@ -31,8 +33,8 @@
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-size: 1.8rem;
   font-weight: 500;
+  font-size: 1.8rem;
   transition: all 0.3s;
 }
 
@@ -54,17 +56,23 @@
   background-color: #cf711f;
 }
 
-/*******************************/
+/**************************/
 /* HERO SECTION */
-/*******************************/
-
-.hero {
-  max-width: 130rem;
-}
+/**************************/
 
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
 }
 
 .hero-description {
@@ -74,7 +82,7 @@
 }
 
 .hero-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .delivered-meals {
@@ -93,7 +101,7 @@
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: solid 3px #fdf2e9;
+  border: 3px solid #fdf2e9;
 }
 
 .delivered-imgs img:last-child {
@@ -106,13 +114,13 @@
 }
 
 .delivered-text span {
-  color: #e67e22;
+  color: #cf711f;
   font-weight: 700;
 }
 
-/*******************************/
-/* FEATURED SECTION */
-/*******************************/
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
@@ -139,9 +147,9 @@
   opacity: 50%;
 }
 
-/*******************************/
+/**************************/
 /* HOW IT WORKS SECTION */
-/*******************************/
+/**************************/
 
 .section-how {
   padding: 9.6rem 0;
@@ -161,21 +169,30 @@
 
 .step-img-box {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .step-img-box::before,
 .step-img-box::after {
   content: "";
   display: block;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .step-img-box::before {
   width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
   padding-bottom: 60%;
+
   background-color: #fdf2e9;
   z-index: -2;
 }
@@ -189,11 +206,12 @@
 
 .step-img {
   width: 35%;
+  /* z-index: 10; */
 }
 
-/*******************************/
+/**************************/
 /* MEALS SECTION */
-/*******************************/
+/**************************/
 
 .section-meals {
   padding: 9.6rem 0;
@@ -234,11 +252,9 @@
 .tag--vegetarian {
   background-color: #51cf66;
 }
-
 .tag--vegan {
   background-color: #94d82d;
 }
-
 .tag--paleo {
   background-color: #ffd43b;
 }
@@ -267,7 +283,7 @@
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
-  fill: #e67e22;
+  color: #e67e22;
 }
 
 .meal-img {
@@ -275,49 +291,52 @@
 }
 
 .all-recipes {
-  font-size: 1.8rem;
   text-align: center;
+  font-size: 1.8rem;
 }
 
-/*******************************/
+/**************************/
 /* TESTIMONIALS SECTION */
-/*******************************/
+/**************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
+  display: grid;
   grid-template-columns: 55fr 45fr;
-  gap: 0;
   align-items: center;
-  margin-bottom: 0;
 }
 
 .testimonials-container {
-  padding: 9.8rem;
+  padding: 9.6rem;
 }
 
-.testimonals {
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
 }
 
-.testimonal-img {
+.testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
 
-.testimonal-text {
+.testimonial-text {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
 
-.testimonal-name {
+.testimonial-name {
   font-size: 1.6rem;
   color: #6f6f6f;
 }
 
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -336,16 +355,17 @@
   transform: scale(1.1);
 }
 
-/*******************************/
-/* PRINCING SECTION */
-/*******************************/
+/**************************/
+/* MEALS SECTION */
+/**************************/
 
-.section-princing {
+.section-pricing {
   padding: 9.6rem 0;
 }
 
 .princing-plan {
   border-radius: 11px;
+
   width: 75%;
 }
 
@@ -367,6 +387,7 @@
   position: absolute;
   top: 6%;
   right: -18%;
+
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
@@ -375,6 +396,7 @@
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
 }
+
 .plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
@@ -382,8 +404,8 @@
 
 .plan-name {
   color: #cf711f;
-  font-size: 2rem;
   font-weight: 600;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
@@ -393,7 +415,7 @@
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .plan-price span {
@@ -417,16 +439,15 @@
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
-  margin-bottom: 4.8rem;
 }
 
 .feature-icon {
-  fill: #e67e22;
-  height: 5.8rem;
-  width: 5.8rem;
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
   background-color: #fdf2e9;
   margin-bottom: 3.2rem;
-  padding: 1.4rem;
+  padding: 1.6rem;
   border-radius: 50%;
 }
 
@@ -440,6 +461,93 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
 /**************************/

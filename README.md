@@ -5,18 +5,7 @@
 > Udemy：https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/
 >
 > Bilibili：https://b23.tv/bUiw1bZ
->
-> > Fonts：https://fonts.google.com/
-> >
-> > Color：https://yeun.github.io/open-color/
-> >
-> > Icons：https://phosphoricons.com/
-> >
-> > Pictures：https://unsplash.com/
-> >
-> > Image Compression：https://squoosh.app/
-> >
-> > Design：https://land-book.com/ https://onepagelove.com/ https://www.awwwards.com/websites/
+
 
 ## 建立网站(Omnifood)的过程
 

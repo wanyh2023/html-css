@@ -56,7 +56,8 @@
 ### 4. 设计和建立网站
 
 - 使用步骤 1、2 和 3 中的决策、内容和草图，使用 HTML 和 CSS 设计和构建网站。
-  > [Omnifood](Omnifood)
+  > [index.html](Omnifood/index.html)
+  > [style.css](Omnifood/css/style.css)
 
 ### 5. 测试和优化
 
